@@ -2,262 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfb01bb-02b2-4be6-84c5-225709eac443" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/target/xc-framework-model.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-parent/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/target/xc-service-api.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_30.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_24_0_jre.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_lingala_zip4j_zip4j_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_16_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_6_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_unknown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_10_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_0_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_0_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_jwt_1_0_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/xc_framework_utils.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xc_service_portal.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/client/XcServiceList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/request/RequestData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/CommonCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResponseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/Response.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResponseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResultCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/web/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsConfigModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsPageParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsSite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsSiteServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/ext/CmsPageExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/ext/CmsTemplateExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/response/CmsCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/response/CmsPageResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/response/CoursePreviewResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/response/GenerateHtmlResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CourseBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CourseIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CourseMarket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CourseOff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CoursePic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CoursePre.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CoursePub.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/Teachplan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/TeachplanMedia.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/CategoryNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/CategoryParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/CourseInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/TeachplanExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/TeachplanNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/TeachplanParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/request/CourseListRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/response/AddCourseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/response/CourseCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/response/DeleteCourseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/filesystem/FileSystem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/filesystem/response/FileSystemCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/filesystem/response/UploadFileResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/learning/XcLearningCourse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/learning/XcLearningList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/MediaFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/MediaFileProcess.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/MediaFileProcess_m3u8.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/MediaVideoCourse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/MediaVideoCourseSimple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/request/QueryMediaFileRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/response/CheckChunkResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/response/MediaCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/response/MediaCourseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/media/response/MediaFileResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/XcOrders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/XcOrdersDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/XcOrdersPay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/request/CreateOrderRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/request/weixinPayInformRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/response/CreateOrderResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/response/OrderCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/response/OrderResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/response/PayOrderResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/order/response/PayQrcodeResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/portalview/PreViewCourse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/portalview/PreViewCourseMedia.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/portalview/ViewCourse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/portalview/ViewCourseMedia.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/portalview/response/PortalViewCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/report/ReportCompany.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/report/ReportCourse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/search/CourseSearchParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/system/SysDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/system/SysDictionaryValue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/task/XcTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/task/XcTaskHis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/test/UserTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcCompany.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcCompanyUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcPermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcTeacher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/XcUserRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/AuthToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/UserBasicInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/UserToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/UserTokenStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/XcMenuExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/ext/XcUserExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/request/LoginRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/response/AuthCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/response/JwtResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/response/LoginResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/ucenter/response/UcenterCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-model/xc-framework-model.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-parent/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-parent/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-parent/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/BCryptUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/CookieUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/GenerateOrderNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/HlsVideoUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/HttpClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/MD5Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/Mp4VideoUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/Oauth2Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/Snowflake.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/SnowflakeIdWorker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/VideoUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/XcOauth2Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-framework-utils/src/main/java/com/xuecheng/framework/utils/ZipUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/config/Swagger2Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xc-service-api/xc-service-api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/xc-framework-utils/target/" />
     <ignored path="$PROJECT_DIR$/xc-framework-model/target/" />
@@ -775,16 +521,23 @@
       <option name="presentableId" value="Default" />
       <updated>1539070605305</updated>
       <workItem from="1539070606746" duration="819000" />
-      <workItem from="1539071435813" duration="836000" />
+      <workItem from="1539071435813" duration="1528000" />
     </task>
+    <task id="LOCAL-00001" summary="xczx">
+      <created>1539072311046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539072311046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1655000" />
+    <option name="totallyTimeSpent" value="2347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33078602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -807,7 +560,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25320512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25320512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -824,6 +577,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xczx" />
+    <option name="LAST_COMMIT_MESSAGE" value="xczx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
