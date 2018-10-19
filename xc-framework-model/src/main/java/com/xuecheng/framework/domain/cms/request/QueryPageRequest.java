@@ -1,10 +1,12 @@
 package com.xuecheng.framework.domain.cms.request;
 
 import com.xuecheng.framework.model.request.RequestData;
+import lombok.Data;
 
 /**
  * Created by bobo on 2018/10/10.
  */
+@Data
 public class QueryPageRequest  extends RequestData {
 
     //站点id
@@ -17,5 +19,7 @@ public class QueryPageRequest  extends RequestData {
     private String pageAliase;
     //模版id
     private String templateId;
+    //页面类型
+    private String pageType;
 
 }
