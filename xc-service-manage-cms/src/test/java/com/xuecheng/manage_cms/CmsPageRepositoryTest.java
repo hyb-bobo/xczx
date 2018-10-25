@@ -8,12 +8,15 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.*;
+import org.springframework.data.mongodb.gridfs.GridFsTemplate;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 /**
  * Created by bobo on 2018/10/11.
@@ -93,5 +96,31 @@ public class CmsPageRepositoryTest {
         Pageable pageable = new PageRequest(0, 10);
         Page<CmsPage> all = cmsPageRepository.findAll(example, pageable);
         System.out.println(all);
+    }
+
+    @Autowired
+    RestTemplate restTemplate;
+    @Test
+    public void testRestTemplate(){
+    ResponseEntity<Map> forEntity =
+        restTemplate.getForEntity("http://localhost:31001/cms/config/getmodel/5a791725dd573c3574ee333f",
+                Map.class);
+    System.out.println(forEntity);
+    }
+
+    @Autowired
+    GridFsTemplate gridFsTemplate;
+
+    @Test
+    public void testGridFs() throws FileNotFoundException {
+        //要存储的文件
+        File file = new File("d:/index_banner.html");
+        //定义输入流
+        FileInputStream inputStram = new FileInputStream(file);
+        //向GridFS存储文件
+        org.bson.types.ObjectId objectId = gridFsTemplate.store(inputStram, "轮播图测试文件01", "");
+        //得到文件ID
+        String fileId = objectId.toString();
+        System.out.println(file);
     }
 }
