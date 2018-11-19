@@ -23,10 +23,11 @@ public class CmsPageController implements CmsPageControllerApi {
     @Autowired
     PageService pageService;
 
-    @ApiOperation(value = "校验计划任务设备重复性选择")
+//    @ApiOperation(value = "校验计划任务设备重复性选择")
    /* @ApiImplicitParams({
             @ApiImplicitParam(name = "eupIds", value = "eupIds", dataType = "String", paramType = "query")
     })*/
+    @ApiOperation(value = "查询列表")
     @Override
     @GetMapping("/list/{page}/{size}")
     public QueryResponseResult findList(@PathVariable("page") int page, @PathVariable("size") int size, QueryPageRequest queryPageRequest) {
