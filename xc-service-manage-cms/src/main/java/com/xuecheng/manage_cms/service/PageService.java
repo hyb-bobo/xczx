@@ -161,6 +161,11 @@ public class PageService {
         return new CmsPageResult(CommonCode.FAIL, null);
     }
 
+    /**
+     * 现在的删除是物理删除，在实际开发中是不会使用物理删除的  这就需要结合项目的实际情况来定
+     * @param id
+     * @return
+     */
     public ResponseResult delete(String id) {
         CmsPage cmsPage = this.findById(id);
         if (cmsPage != null) {
