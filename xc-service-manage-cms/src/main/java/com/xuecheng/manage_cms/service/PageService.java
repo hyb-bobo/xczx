@@ -57,24 +57,24 @@ public class PageService {
         CmsPage cmsPage = new CmsPage();
         //站点ID
         if (StringUtils.isNotEmpty(queryPageRequest.getSiteId())) {
-            cmsPage.setSiteId(queryPageRequest.getSiteId());
+            cmsPage.setSiteId(queryPageRequest.getSiteId().trim());
         }
 //        cmsPage.setSiteId("5a751fab6abb5044e0d19ea1");
         //模板ID
         if (StringUtils.isNotEmpty(queryPageRequest.getTemplateId())) {
-            cmsPage.setTemplateId(queryPageRequest.getTemplateId());
+            cmsPage.setTemplateId(queryPageRequest.getTemplateId().trim());
         }
 //        cmsPage.setTemplateId("5a962c16b00ffc514038fafd");
         if (StringUtils.isNotEmpty(queryPageRequest.getPageAliase())) {
-            cmsPage.setPageAliase(queryPageRequest.getPageAliase());
+            cmsPage.setPageAliase(queryPageRequest.getPageAliase().trim());
         }
 
         if (StringUtils.isNotEmpty(queryPageRequest.getPageName())) {
-            cmsPage.setPageName(queryPageRequest.getPageName());
+            cmsPage.setPageName(queryPageRequest.getPageName().trim());
         }
 
         if (StringUtils.isNotEmpty(queryPageRequest.getPageType())) {
-            cmsPage.setPageType(queryPageRequest.getPageType());
+            cmsPage.setPageType(queryPageRequest.getPageType().trim());
         }
 //        cmsPage.setPageAliase("分类导航");
 
