@@ -76,7 +76,7 @@ public class TestFreemarker {
     System.out.println(content);
     InputStream inputStream = IOUtils.toInputStream(content);
     //输出文件
-    FileOutputStream fileOutputStream = new FileOutputStream(new File("d:/test1.html"));
+    FileOutputStream fileOutputStream = new FileOutputStream(new File("d:/test2.html"));
     int copy = IOUtils.copy(inputStream, fileOutputStream);
     }
 

@@ -3,6 +3,7 @@ package com.xuecheng.manage_cms;
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.CmsPageParam;
 import com.xuecheng.manage_cms.dao.CmsPageRepository;
+import com.xuecheng.manage_cms.service.PageService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,5 +124,12 @@ public class CmsPageRepositoryTest {
         //得到文件ID
         String fileId = objectId.toString();
         System.out.println(file);
+    }
+
+    @Autowired
+    PageService pageService;
+    @Test
+    public void testGetPageHtml() throws FileNotFoundException {
+        String ddddddd = pageService.getPageHtml("ddddddd");
     }
 }
