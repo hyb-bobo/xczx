@@ -45,11 +45,11 @@ public class TestFreemarker {
     @Test
     public void testGridFs() throws FileNotFoundException {
         //要存储的文件
-        File file = new File("d:/index_banner.html");
+        File file = new File("d:/test1.ftl");
         //定义输入流
         FileInputStream inputStram = new FileInputStream(file);
         //向GridFS存储文件
-        org.bson.types.ObjectId objectId = gridFsTemplate.store(inputStram, "轮播图测试文件01", "");
+        org.bson.types.ObjectId objectId = gridFsTemplate.store(inputStram, "测试网页静态化", "");
         //得到文件ID
         String fileId = objectId.toString();
         System.out.println(file);

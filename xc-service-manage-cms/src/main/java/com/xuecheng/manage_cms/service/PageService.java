@@ -32,6 +32,7 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -254,8 +255,10 @@ public class PageService {
         //获取模板
         try {
             Template template = configuration.getTemplate("template");
+            Map<String,Object> map = new HashMap<>();
+            map.put("model",model);
             //调用api进行静态化
-            String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
+            String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, map);
             return content;
         } catch (Exception e) {
             e.printStackTrace();
