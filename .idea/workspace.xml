@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbfb01bb-02b2-4be6-84c5-225709eac443" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer02_publish.java" />
+    <list default="true" id="cbfb01bb-02b2-4be6-84c5-225709eac443" name="Default" comment="xczx--fant">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_sms.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02.java" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_email.java" />
     </list>
     <ignored path="$PROJECT_DIR$/xc-framework-utils/target/" />
     <ignored path="$PROJECT_DIR$/xc-framework-model/target/" />
@@ -27,14 +27,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Producer02_publish.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Producer02_publish.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer02_publish.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="400">
+              <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Consumer02_email.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_email.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Consumer02_sms.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_sms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sapplication</find>
       <find>pplication</find>
       <find>application.name</find>
       <find>application.nam</find>
@@ -91,15 +110,13 @@
       <find />
       <find>Connection</find>
       <find> </find>
+      <find>         </find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>http://127.0.0.1</replace>
       <replace>--</replace>
       <replace>-</replace>
-      <replace />
-      <replace />
-      <replace />
       <replace />
     </replaceStrings>
   </component>
@@ -160,8 +177,10 @@
         <option value="$PROJECT_DIR$/test-rabbitmq-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer01.java" />
         <option value="$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer01.java" />
-        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02.java" />
         <option value="$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer02_publish.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_email.java" />
+        <option value="$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_sms.java" />
       </list>
     </option>
   </component>
@@ -579,14 +598,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Consumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Consumer02_email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.xuecheng.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.consumer.Consumer02" />
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.consumer.Consumer02_email" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1048,13 +1067,13 @@
       <item index="3" class="java.lang.String" itemvalue="JUnit.CmsPageRepositoryTest.testGetPageHtml" />
       <item index="4" class="java.lang.String" itemvalue="Application.Producer01" />
       <item index="5" class="java.lang.String" itemvalue="Application.Consumer01" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Consumer02" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Consumer02_email" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Producer01" />
         <item index="1" class="java.lang.String" itemvalue="Application.Consumer01" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Consumer02" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Consumer02_email" />
         <item index="3" class="java.lang.String" itemvalue="Spring Boot.ManageCmsApplication" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CmsPageRepositoryTest.testGetPageHtml" />
       </list>
@@ -1091,7 +1110,7 @@
       <workItem from="1543801470166" duration="6867000" />
       <workItem from="1543821849600" duration="14213000" />
       <workItem from="1544168499278" duration="10947000" />
-      <workItem from="1544679284606" duration="319000" />
+      <workItem from="1544679284606" duration="882000" />
     </task>
     <task id="LOCAL-00001" summary="xczx">
       <created>1539072311046</created>
@@ -1219,7 +1238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544577136882</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="xczx--mq">
+      <created>1544679611000</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1544679611000</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1255,7 +1281,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156869000" />
+    <option name="totallyTimeSpent" value="157432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1363,13 +1389,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -1700,13 +1719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -1722,13 +1734,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test-rabbitmq-producer/src/main/java/com/xuecheng/producer/Producer02_publish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="400">
+          <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-rabbitmq-consumer/src/main/java/com/xuecheng/consumer/Consumer02_sms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

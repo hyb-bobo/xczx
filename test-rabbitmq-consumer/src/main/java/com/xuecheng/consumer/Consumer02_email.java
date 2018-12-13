@@ -10,9 +10,11 @@ import java.util.concurrent.TimeoutException;
 /**
  * Created by bobo on 2018/12/11.
  */
-public class Consumer02 {
+public class Consumer02_email {
 
-    private static final String QUEUE = "hello world";
+
+    private static final String QUEUE_INFORM_EMAIL = "inform_queue_email";
+    private static final String EXCHANGE_FANOUT_INFORM = "inform_exchange_fanout";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
@@ -24,7 +26,14 @@ public class Consumer02 {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         //声明队列
-        channel.queueDeclare(QUEUE, true, false, false, null);
+        channel.queueDeclare(QUEUE_INFORM_EMAIL, true, false, false, null);
+        /**
+         * 参数明细
+         * 1、队列名称
+         * 2、交换机名称
+         * 3、路由key
+         */
+        channel.queueBind(QUEUE_INFORM_EMAIL, EXCHANGE_FANOUT_INFORM, "");
         //定义消费方法
 
         DefaultConsumer consumer = new DefaultConsumer(channel) {
@@ -65,7 +74,7 @@ public class Consumer02 {
          * 3、消费消息的方法，消费者接收到消息后调用此方法
          */
 
-        channel.basicConsume(QUEUE, true, consumer);
+        channel.basicConsume(QUEUE_INFORM_EMAIL, true, consumer);
 
 
     }
