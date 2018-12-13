@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="test-rabbitmq-consumer" />
         <module name="test-rabbitmq-producer" />
+        <module name="xc-framework-common" />
         <module name="xc-framework-model" />
         <module name="xc-framework-test" />
         <module name="xc-framework-utils" />
