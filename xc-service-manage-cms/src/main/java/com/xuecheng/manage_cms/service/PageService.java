@@ -363,7 +363,7 @@ public class PageService {
         String msg = JSON.toJSONString(msgMap);
         //获取站点id作为routingKey
         String siteId = cmsPage.getSiteId();
-        //发布消息
+        //发布消息  交换机、routingKey、发送的内容
         this.rabbitTemplate.convertAndSend(RabbitmqConfig.EX_ROUTING_CMS_POSTPAGE, siteId, msg);
     }
 
