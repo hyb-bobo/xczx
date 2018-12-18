@@ -56,6 +56,20 @@ public class RabbitmqConfig {
         return BindingBuilder.bind(queue).to(exchange).with("inform.#.sms.#").noargs();
     }
 
+//    /**
+//     * channel.queueBind(INFORM_QUEUE_SMS,"inform_exchange_topic","inform.#.sms.#");
+//     * 绑定队列到交换机 .
+//     *
+//     * @param queue    the queue
+//     * @param exchange the exchange
+//     * @return the binding
+//     */
+//    @Bean
+//    public Binding BINDING_QUEUE_INFORM_SMS(@Qualifier(QUEUE_INFORM_SMS) Queue queue,
+//                                            @Qualifier(EXCHANGE_TOPICS_INFORM) Exchange exchange) {
+//        return BindingBuilder.bind(queue).to(exchange).with("inform.#.sms.#").noargs();
+//    }
+
     @Bean
     public Binding BINDING_QUEUE_INFORM_EMAIL(@Qualifier(QUEUE_INFORM_EMAIL) Queue queue,
                                               @Qualifier(EXCHANGE_TOPICS_INFORM) Exchange exchange) {

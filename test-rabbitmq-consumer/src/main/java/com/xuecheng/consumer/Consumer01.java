@@ -45,11 +45,11 @@ public class Consumer01 {
                                        byte[] body) throws UnsupportedEncodingException {
 
                 //交换机
-//                String exchange = envelope.getExchange();
+                String exchange = envelope.getExchange();
                 //路由key
-//                String routingKey = envelope.getRoutingKey();
+                String routingKey = envelope.getRoutingKey();
                 //消息id
-//                long deliveryTag = envelope.getDeliveryTag();
+                long deliveryTag = envelope.getDeliveryTag();
                 //消息内容
                 String msg = new String(body, "utf-8");
                 System.out.println("receive message.." + msg);
