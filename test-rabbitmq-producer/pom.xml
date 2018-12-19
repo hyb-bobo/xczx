@@ -10,8 +10,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.xuecheng.testmq</groupId>
-    <artifactId>com.xuecheng.testmq</artifactId>
+    <groupId>test-rabbitmq-producer</groupId>
+    <artifactId>test-rabbitmq-producer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

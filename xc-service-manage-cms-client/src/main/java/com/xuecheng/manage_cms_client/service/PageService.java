@@ -15,6 +15,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,12 +26,14 @@ import java.util.Optional;
 /**
  * Created by bobo on 2018/12/18.
  */
+@Service
 public class PageService {
 
     private static  final Logger LOGGER = LoggerFactory.getLogger(PageService.class);
 
     @Autowired
     GridFsTemplate gridFsTemplate;
+
 
     @Autowired
     GridFSBucket gridFSBucket;
@@ -40,6 +43,8 @@ public class PageService {
 
     @Autowired
     CmsSiteRepository cmsSiteRepository;
+
+
 
     //保存html页面到服务器物理路径
     public void savePageToServerPath(String pageId){
