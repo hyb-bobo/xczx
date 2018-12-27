@@ -1,8 +1,13 @@
 server:
-  port: 32000
+  port: 22000
 spring:
   application:
     name: xc-service-manage-cms-client
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.40.129:3306/xc_course?characterEncoding=utf-8
+    username: root
+    password: 123456
   data:
     mongodb:
       database: xc_cms
@@ -22,4 +27,7 @@ xuecheng:
   #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
     queue: queue_cms_postpage_01
     routingKey: 5a751fab6abb5044e0d19ea1 #此routingKey为门户站点ID
+mybatis:
+  type-aliases-package: com.xuecheng.framework.domain
+  mapper-locations: classpath:com/xuecheng/manage_cms_client/dao/*.xml
 

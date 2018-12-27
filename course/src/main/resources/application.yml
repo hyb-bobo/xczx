@@ -1,0 +1,15 @@
+#DB Configuration:
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.40.129:33306/xc_course?useUnicode=true&characterEncoding=utf8
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    database: MySql
+    show-sql: true
+    generate-ddl: true
+    spring.jpa.hibernate.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+mybatis:
+  mapper-locations: classpath:com/test/dao/*Mapper.xml
+  type-aliases-package: com.test.domain

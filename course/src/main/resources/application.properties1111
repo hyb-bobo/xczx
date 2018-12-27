@@ -1,0 +1,17 @@
+#DB Configuration:
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://192.168.40.129:33306/xc_course?useUnicode=true&characterEncoding=utf8
+spring.datasource.username=root
+spring.datasource.password=123456
+#JPA Configuration:
+spring.jpa.database=MySQL
+spring.jpa.show-sql=true
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.naming_strategy=org.hibernate.cfg.ImprovedNamingStrategy
+
+#spring\u96C6\u6210Mybatis\u73AF\u5883
+#pojo\u522B\u540D\u626B\u63CF\u5305
+mybatis.type-aliases-package=com.test.domain
+#\u52A0\u8F7DMybatis\u6620\u5C04\u6587\u4EF6
+mybatis.mapper-locations=classpath:com/test/dao/*Mapper.xml
