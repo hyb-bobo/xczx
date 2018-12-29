@@ -11,3 +11,7 @@ spring:
 mybatis:
   mapper-locations: classpath:com/xuecheng/manage_course/dao/*Mapper.xml
   type-aliases-package: com.xuecheng.framework.domain
+# 打印sql
+logging:
+  level:
+     com.xuecheng.manage_course.dao : debug
