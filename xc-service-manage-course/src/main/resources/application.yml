@@ -15,3 +15,5 @@ mybatis:
 logging:
   level:
      com.xuecheng.manage_course.dao : debug
+pagehelper:
+  helper-dialect: mysql

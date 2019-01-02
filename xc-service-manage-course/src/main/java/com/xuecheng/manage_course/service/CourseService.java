@@ -3,8 +3,10 @@ package com.xuecheng.manage_course.service;
 import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.domain.course.Teachplan;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
+import com.xuecheng.framework.domain.course.request.CourseListRequest;
 import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
+import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import com.xuecheng.manage_course.dao.CourseBaseRepository;
 import com.xuecheng.manage_course.dao.TeachplanMapper;
@@ -102,5 +104,10 @@ public class CourseService {
         teachplan.setCourseid(teachplanParent.getCourseid());
         teachplanRepository.save(teachplan);
         return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+
+    public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
+        return null;
     }
 }

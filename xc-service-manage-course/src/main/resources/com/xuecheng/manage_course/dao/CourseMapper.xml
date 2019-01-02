@@ -5,4 +5,59 @@
             resultType="com.xuecheng.framework.domain.course.CourseBase">
         select * from course_base where id = #{id}
     </select>
+    <select id="findCourseListPage" resultType="com.xuecheng.framework.domain.course.ext.CourseInfo"
+            parameterType="com.xuecheng.framework.domain.course.request.CourseListRequest">
+			/*SELECT
+				course_base.*, (
+					SELECT
+						pic
+					FROM
+						course_pic
+					WHERE
+						courseid = course_base.id
+				)  pic
+			FROM
+				course_base*/
+				SELECT
+					name,
+					users,
+					mt,
+					grade,
+					studymodel,
+					teachmode,
+					description,
+					st,
+					status,
+					company_id as companyId,
+					user_id as useId,
+					(
+						SELECT
+							pic
+						FROM
+							course_pic
+						WHERE
+							courseid = course_base.id
+					)  pic
+				FROM
+					course_base
+    </select>
+
+	<resultMap id="cityMap" type="com.xuecheng.framework.domain.course.CourseBase">
+		<result column="id" property="id"/>
+		<result column="company_id" property="companyId"/>
+		<result column="user_id" property="userId"/>
+	</resultMap>
+
+	<!--<select id="selectCity" resultMap="cityMap">
+		select id,
+		city_id,
+		city_name,
+		city_en_name
+		from SU_City
+		where id = #{id}
+	</select>-->
+
+	<select id="finfCourseBase" resultMap="cityMap">
+		select * from course_base
+	</select>
 </mapper>
