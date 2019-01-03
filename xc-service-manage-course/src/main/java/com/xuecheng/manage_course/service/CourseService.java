@@ -1,14 +1,19 @@
 package com.xuecheng.manage_course.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.domain.course.Teachplan;
+import com.xuecheng.framework.domain.course.ext.CourseInfo;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import com.xuecheng.framework.domain.course.request.CourseListRequest;
 import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
+import com.xuecheng.framework.model.response.QueryResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import com.xuecheng.manage_course.dao.CourseBaseRepository;
+import com.xuecheng.manage_course.dao.CourseMapper;
 import com.xuecheng.manage_course.dao.TeachplanMapper;
 import com.xuecheng.manage_course.dao.TeachplanRepository;
 import org.apache.commons.lang3.StringUtils;
@@ -33,6 +38,8 @@ public class CourseService {
 
     @Autowired
     TeachplanRepository teachplanRepository;
+    @Autowired
+    CourseMapper courseMapper;
 
     //查询课程计划
     public TeachplanNode findTeachplanList(String courseId) {
@@ -108,6 +115,13 @@ public class CourseService {
 
 
     public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
-        return null;
+        PageHelper.startPage(1, 10);//查询第一页，每页显示10条记录
+        Page<CourseInfo> courseListPage = courseMapper.findCourseListPage(courseListRequest);
+//        List<CourseInfo> result = courseListPage.getResult();
+        QueryResult<CourseInfo> courseInfoResult = new QueryResult<CourseInfo>();
+        courseInfoResult.setList(courseListPage.getResult());
+        courseInfoResult.setTotal(courseListPage.getTotal());
+        QueryResponseResult QueryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,courseInfoResult);
+        return QueryResponseResult;
     }
 }

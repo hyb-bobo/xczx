@@ -36,8 +36,15 @@ public class CourseController implements CourseControllerApi {
     }
 
     @Override
-    public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
+    @GetMapping("/coursebase/list/{page}/{size}")
+    @ResponseBody
+    public QueryResponseResult findCourseList(@PathVariable("page")int page, @PathVariable("size")int size, CourseListRequest courseListRequest) {
         QueryResponseResult courseInfo = courseService.findCourseList(page,size,courseListRequest);
         return courseInfo;
     }
+
+    //查询分类
+
+    //查询数据字典
+
 }

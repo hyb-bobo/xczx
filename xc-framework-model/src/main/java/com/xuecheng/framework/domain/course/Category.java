@@ -29,4 +29,8 @@ public class Category implements Serializable {
     private Integer orderby;
     private String isleaf;
 
+
+    public static void main(String[] args) {
+
+    }
 }
