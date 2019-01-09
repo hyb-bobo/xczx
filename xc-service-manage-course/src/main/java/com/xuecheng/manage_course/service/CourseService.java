@@ -115,7 +115,7 @@ public class CourseService {
 
 
     public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
-        PageHelper.startPage(1, 10);//查询第一页，每页显示10条记录
+        PageHelper.startPage(page, size);//查询第一页，每页显示10条记录
         Page<CourseInfo> courseListPage = courseMapper.findCourseListPage(courseListRequest);
 //        List<CourseInfo> result = courseListPage.getResult();
         QueryResult<CourseInfo> courseInfoResult = new QueryResult<CourseInfo>();
