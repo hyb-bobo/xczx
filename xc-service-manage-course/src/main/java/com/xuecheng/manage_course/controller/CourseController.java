@@ -1,6 +1,7 @@
 package com.xuecheng.manage_course.controller;
 
 import com.xuecheng.api.course.CourseControllerApi;
+import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.domain.course.Teachplan;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import com.xuecheng.framework.domain.course.request.CourseListRequest;
@@ -43,8 +44,15 @@ public class CourseController implements CourseControllerApi {
         return courseInfo;
     }
 
-    //查询分类
+    /**
+     * 根据id查询课程信息
+     * @param courseid
+     * @return
+     */
+    @Override
+    public CourseBase getCoursebaseById(String courseid) {
+        return courseService.getCoursebaseById(courseid);
+    }
 
-    //查询数据字典
 
 }

@@ -8,6 +8,10 @@ spring:
       username: root
       password: 123456
       driverClassName: com.mysql.jdbc.Driver
+  data:
+      mongodb:
+        database: xc_cms
+        uri:  mongodb://192.168.40.129:27017/xc_cms
 mybatis:
   mapper-locations: classpath:com/xuecheng/manage_course/dao/*Mapper.xml
   type-aliases-package: com.xuecheng.framework.domain

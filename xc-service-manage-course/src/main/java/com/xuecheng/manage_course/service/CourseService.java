@@ -124,4 +124,9 @@ public class CourseService {
         QueryResponseResult QueryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,courseInfoResult);
         return QueryResponseResult;
     }
+
+    public CourseBase getCoursebaseById(String courseid) {
+        CourseBase courseBaseById = courseMapper.findCourseBaseById(courseid);
+        return courseBaseById;
+    }
 }
