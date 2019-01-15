@@ -14,6 +14,7 @@ import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.QueryResult;
 import com.xuecheng.framework.model.response.ResponseResult;
+import com.xuecheng.framework.utils.DateUtil;
 import com.xuecheng.manage_course.dao.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -156,10 +157,19 @@ public class CourseService {
     }
 
     public ResponseResult updateCourseMarket(CourseMarket courseMarket) {
-//        DateUtil.date2View(courseMarket.getStartTime());
+        if(courseMarket.getStartTime() != null){
+                courseMarket.setStartTime(DateUtil.date2View(courseMarket.getStartTime()));
+        }
+        if(courseMarket.getEndTime() != null){
+            courseMarket.setEndTime(DateUtil.date2View(courseMarket.getEndTime()));
+        }
         int i = courseMarketMapper.updateCourseMarket(courseMarket);
         System.out.println(i);
-        return null;
+        if(i==1){
+            return new ResponseResult(CommonCode.SUCCESS);
+        }else {
+            return new ResponseResult(CommonCode.FAIL);
+        }
     }
 
 

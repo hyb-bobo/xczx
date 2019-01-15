@@ -6,7 +6,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Created by admin on 2018/2/10.
@@ -27,10 +26,12 @@ public class CourseMarket implements Serializable {
     private String qq;
     private Float price;
     private Float price_old;
-    private Date expires;
+//    private Date expires;
     @Column(name = "start_time")
-    private Date startTime;
+//    private Date startTime;
+    private String startTime;
     @Column(name = "end_time")
-    private Date endTime;
+    private String endTime;
+//    private Date endTime;
 
 }

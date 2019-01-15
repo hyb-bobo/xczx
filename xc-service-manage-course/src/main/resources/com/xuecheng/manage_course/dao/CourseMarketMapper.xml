@@ -13,14 +13,16 @@
 
     <update id="updateCourseMarket" parameterType="com.xuecheng.framework.domain.course.CourseMarket">
         UPDATE course_market
-        SET
-        <if test="charge != null and charge != ''">charge=#{charge},</if>
-        <if test="valid != null and valid != ''">valid=#{valid},</if>
-        <if test="expires != null and expires != ''">expires=#{expires},</if>
-        <if test="qq != null and qq != ''">qq=#{qq},</if>
-        <if test="startTime != null and startTime != ''">start_time=#{startTime},</if>
-        <if test="price_old != null and price_old != ''">price_old=#{price_old},</if>
-        <if test="endTime != null and endTime != ''">end_time=#{endTime},</if>
+        <trim prefix="set" suffixOverrides=",">
+            <if test="charge != null and charge != ''">charge=#{charge},</if>
+            <if test="valid != null and valid != ''">valid=#{valid},</if>
+            <!--<if test="expires != null and expires != ''">expires=#{expires},</if>-->
+            <if test="qq != null and qq != ''">qq=#{qq},</if>
+            <if test="startTime != null and startTime != ''">start_time=#{startTime,jdbcType=TIMESTAMP},</if>
+            <if test="price_old != null and price_old != ''">price_old=#{price_old},</if>
+            <if test="price != null and price != ''">price=#{price},</if>
+            <if test="endTime != null and endTime != ''">end_time=#{endTime,jdbcType=TIMESTAMP},</if>
+        </trim>
         WHERE id = #{id}
 
     </update>
