@@ -157,17 +157,17 @@ public class CourseService {
     }
 
     public ResponseResult updateCourseMarket(CourseMarket courseMarket) {
-        if(courseMarket.getStartTime() != null){
-                courseMarket.setStartTime(DateUtil.date2View(courseMarket.getStartTime()));
+        if (courseMarket.getStartTime() != null) {
+            courseMarket.setStartTime(DateUtil.date2View(courseMarket.getStartTime()));
         }
-        if(courseMarket.getEndTime() != null){
+        if (courseMarket.getEndTime() != null) {
             courseMarket.setEndTime(DateUtil.date2View(courseMarket.getEndTime()));
         }
         int i = courseMarketMapper.updateCourseMarket(courseMarket);
         System.out.println(i);
-        if(i==1){
+        if (i == 1) {
             return new ResponseResult(CommonCode.SUCCESS);
-        }else {
+        } else {
             return new ResponseResult(CommonCode.FAIL);
         }
     }
