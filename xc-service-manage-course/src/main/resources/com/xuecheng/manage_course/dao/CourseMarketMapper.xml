@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xuecheng.manage_course.dao.CourseMarketMapper">
+
+    <select id="getCourseMarketById" parameterType="java.lang.String"
+            resultType="com.xuecheng.framework.domain.course.CourseMarket">
+        SELECT * from course_market
+        WHERE 1=1
+        <if test="courseId!=null and courseId!=''">
+            and id=#{courseId}
+        </if>
+    </select>
+
+    <update id="updateCourseMarket" parameterType="com.xuecheng.framework.domain.course.CourseMarket">
+        UPDATE course_market
+        SET
+        <if test="charge != null and charge != ''">charge=#{charge},</if>
+        <if test="valid != null and valid != ''">valid=#{valid},</if>
+        <if test="expires != null and expires != ''">expires=#{expires},</if>
+        <if test="qq != null and qq != ''">qq=#{qq},</if>
+        <if test="startTime != null and startTime != ''">start_time=#{startTime},</if>
+        <if test="price_old != null and price_old != ''">price_old=#{price_old},</if>
+        <if test="endTime != null and endTime != ''">end_time=#{endTime},</if>
+        WHERE id = #{id}
+
+    </update>
+
+</mapper>

@@ -6,8 +6,8 @@
     <modules>
         <module>../xc-service-manage-course</module>
         <module>../xc-service-manage-course</module>
-        <module>../com-course</module>
-        <module>../xc-course</module>
+        <!--<module>../com-course</module>-->
+        <!--<module>../xc-course</module>-->
         <module>../course</module>
     </modules>
     <parent>

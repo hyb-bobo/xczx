@@ -3,19 +3,18 @@ package com.xuecheng.manage_course.service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.xuecheng.framework.domain.course.CourseBase;
+import com.xuecheng.framework.domain.course.CourseMarket;
 import com.xuecheng.framework.domain.course.Teachplan;
 import com.xuecheng.framework.domain.course.ext.CourseInfo;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import com.xuecheng.framework.domain.course.request.CourseListRequest;
+import com.xuecheng.framework.domain.course.response.AddCourseResult;
 import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.QueryResult;
 import com.xuecheng.framework.model.response.ResponseResult;
-import com.xuecheng.manage_course.dao.CourseBaseRepository;
-import com.xuecheng.manage_course.dao.CourseMapper;
-import com.xuecheng.manage_course.dao.TeachplanMapper;
-import com.xuecheng.manage_course.dao.TeachplanRepository;
+import com.xuecheng.manage_course.dao.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,6 +39,8 @@ public class CourseService {
     TeachplanRepository teachplanRepository;
     @Autowired
     CourseMapper courseMapper;
+    @Autowired
+    CourseMarketMapper courseMarketMapper;
 
     //查询课程计划
     public TeachplanNode findTeachplanList(String courseId) {
@@ -121,7 +122,7 @@ public class CourseService {
         QueryResult<CourseInfo> courseInfoResult = new QueryResult<CourseInfo>();
         courseInfoResult.setList(courseListPage.getResult());
         courseInfoResult.setTotal(courseListPage.getTotal());
-        QueryResponseResult QueryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,courseInfoResult);
+        QueryResponseResult QueryResponseResult = new QueryResponseResult(CommonCode.SUCCESS, courseInfoResult);
         return QueryResponseResult;
     }
 
@@ -129,4 +130,37 @@ public class CourseService {
         CourseBase courseBaseById = courseMapper.findCourseBaseById(courseid);
         return courseBaseById;
     }
+
+    public AddCourseResult addCourse(CourseBase courseBase) {
+        /**
+         * 这种保存方式 是完全依托前端进行数据格式的校验和保证 并且没有任何机会到后台进行数据的处理
+         * 这种方式是不建议的
+         * 至少需要一个中间的model进行参数的转接  考虑到后台数据的处理以及必要的异常处理
+         */
+        //课程状态默认为未发布
+        courseBase.setStatus("202001");
+        courseBaseRepository.save(courseBase);
+        return new AddCourseResult(CommonCode.SUCCESS, courseBase.getId());
+    }
+
+    public CourseMarket getCourseMarketById(String courseId) {
+        CourseMarket courseMarket = courseMarketMapper.getCourseMarketById(courseId);
+        return courseMarket;
+    }
+
+    public ResponseResult updateCoursebase(CourseBase courseBase) {
+        CourseBase save = courseBaseRepository.save(courseBase);
+
+        return new ResponseResult(CommonCode.SUCCESS);
+
+    }
+
+    public ResponseResult updateCourseMarket(CourseMarket courseMarket) {
+//        DateUtil.date2View(courseMarket.getStartTime());
+        int i = courseMarketMapper.updateCourseMarket(courseMarket);
+        System.out.println(i);
+        return null;
+    }
+
+
 }

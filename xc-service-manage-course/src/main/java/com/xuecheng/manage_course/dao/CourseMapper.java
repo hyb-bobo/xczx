@@ -16,4 +16,5 @@ public interface CourseMapper {
    Page<CourseInfo> findCourseListPage(CourseListRequest courseListRequest);
 
    Page<CourseBase> finfCourseBase();
+
 }
