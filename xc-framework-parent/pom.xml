@@ -9,6 +9,7 @@
         <!--<module>../com-course</module>-->
         <!--<module>../xc-course</module>-->
         <module>../course</module>
+        <module>../xc-govern-center</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
