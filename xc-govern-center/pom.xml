@@ -13,6 +13,13 @@
     <artifactId>xc-govern-center</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Finchley.SR1</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
         <!-- 导入Eureka服务的依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
