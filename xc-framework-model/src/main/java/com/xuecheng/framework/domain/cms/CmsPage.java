@@ -57,4 +57,28 @@ public class CmsPage {
     //数据Url
     private String dataUrl;
 
+    public CmsPage() {
+    }
+
+    @Override
+    public String toString() {
+        return "CmsPage{" +
+                "siteId='" + siteId + '\'' +
+                ", pageId='" + pageId + '\'' +
+                ", pageName='" + pageName + '\'' +
+                ", pageAliase='" + pageAliase + '\'' +
+                ", pageWebPath='" + pageWebPath + '\'' +
+                ", pageParameter='" + pageParameter + '\'' +
+                ", pagePhysicalPath='" + pagePhysicalPath + '\'' +
+                ", pageType='" + pageType + '\'' +
+                ", pageTemplate='" + pageTemplate + '\'' +
+                ", pageHtml='" + pageHtml + '\'' +
+                ", pageStatus='" + pageStatus + '\'' +
+                ", pageCreateTime=" + pageCreateTime +
+                ", templateId='" + templateId + '\'' +
+                ", pageParams=" + pageParams +
+                ", htmlFileId='" + htmlFileId + '\'' +
+                ", dataUrl='" + dataUrl + '\'' +
+                '}';
+    }
 }
