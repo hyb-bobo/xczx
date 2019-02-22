@@ -128,8 +128,20 @@ public class CmsPageRepositoryTest {
 
     @Autowired
     PageService pageService;
+
     @Test
     public void testGetPageHtml() throws FileNotFoundException {
         String ddddddd = pageService.getPageHtml("5c04d1d31e4b771940b135e1");
+    }
+
+    // 文件存储2
+    @Test
+    public void testStore2() throws FileNotFoundException {
+        File file = new File("D:\\java\\xc_service_portal\\xczx\\xc-framework-test\\src\\main\\resources\\templates\\course.ftl");
+        FileInputStream inputStream = new FileInputStream(file);
+        //保存模版文件内容
+        org.bson.types.ObjectId objectId = gridFsTemplate.store(inputStream, "课程详情模板文件", "");
+        String fileId = objectId.toString();
+        System.out.println(fileId);
     }
 }

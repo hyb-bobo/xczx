@@ -251,7 +251,7 @@ public class PageService {
     }
 
     //执行静态化
-    private String generateHtml(String templateContent, Map model) {
+/*    private String generateHtml(String templateContent, Map model) {
         //创建配置对象
         Configuration configuration = new Configuration(Configuration.getVersion());
         //创建模板加载器
@@ -272,8 +272,26 @@ public class PageService {
         }
 
         return null;
+    }*/
+//页面静态化
+    public String generateHtml(String template,Map model){
+        try {
+        //生成配置类
+        Configuration configuration = new Configuration(Configuration.getVersion());
+        //模板加载器
+        StringTemplateLoader stringTemplateLoader = new StringTemplateLoader();
+        stringTemplateLoader.putTemplate("template",template);
+        //配置模板加载器
+        configuration.setTemplateLoader(stringTemplateLoader);
+        //获取模板
+        Template template1 = configuration.getTemplate("template");
+        String html = FreeMarkerTemplateUtils.processTemplateIntoString(template1, model);
+        return html;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
-
     //获取页面的模板信息
     private String getTemplateByPageId(String pageId) {
         //取出页面的信息
@@ -390,4 +408,6 @@ public class PageService {
         cmsPageRepository.save(cmsPage);
         return cmsPage;
     }
+
+
 }
