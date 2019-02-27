@@ -23,7 +23,7 @@ public class CmsPageController implements CmsPageControllerApi {
     @Autowired
     PageService pageService;
 
-//    @ApiOperation(value = "校验计划任务设备重复性选择")
+    //    @ApiOperation(value = "校验计划任务设备重复性选择")
    /* @ApiImplicitParams({
             @ApiImplicitParam(name = "eupIds", value = "eupIds", dataType = "String", paramType = "query")
     })*/
@@ -65,7 +65,7 @@ public class CmsPageController implements CmsPageControllerApi {
     }
 
     @DeleteMapping("/del/{id}")  //使用http的delete方法完成岗位操作
-    public ResponseResult delete(@PathVariable("id")String id) {
+    public ResponseResult delete(@PathVariable("id") String id) {
         return pageService.delete(id);
     }
 
@@ -78,7 +78,7 @@ public class CmsPageController implements CmsPageControllerApi {
 
     @Override
     @PostMapping("/save")
-    public CmsPageResult save(CmsPage cmsPage) {
+    public CmsPageResult save(@RequestBody CmsPage cmsPage) {
         return pageService.save(cmsPage);
     }
 
