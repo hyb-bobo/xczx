@@ -5,10 +5,7 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.text.Text;
-import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.MultiMatchQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -159,14 +156,14 @@ public class TestSearch {
         //页码
         int page = 1;
         //每页记录数
-        int size = 1;
+        int size = 10;
         //计算出记录起始下标
         int from  = (page-1)*size;
         searchSourceBuilder.from(from);//起始记录下标，从0开始
         searchSourceBuilder.size(size);//每页显示的记录数
         //搜索方式
         //termQuery
-        searchSourceBuilder.query(QueryBuilders.termQuery("name","spring"));
+        searchSourceBuilder.query(QueryBuilders.termQuery("name","开发"));
         //设置源字段过虑,第一个参数结果集包括哪些字段，第二个参数表示结果集不包括哪些字段
         searchSourceBuilder.fetchSource(new String[]{"name","studymodel","price","timestamp"},new String[]{});
         //向搜索请求对象中设置搜索源
@@ -264,8 +261,10 @@ public class TestSearch {
 
         //搜索方式
         //MatchQuery
-        searchSourceBuilder.query(QueryBuilders.matchQuery("description","spring开发框架")
-                .minimumShouldMatch("80%"));
+/*        searchSourceBuilder.query(QueryBuilders.matchQuery("description","程序框架")
+                .operator(Operator.OR));*/
+        searchSourceBuilder.query(QueryBuilders.matchQuery("description","程序框架教育爱国我们快乐你好谢谢再见")
+                .minimumShouldMatch("30%"));
         //设置源字段过虑,第一个参数结果集包括哪些字段，第二个参数表示结果集不包括哪些字段
         searchSourceBuilder.fetchSource(new String[]{"name","studymodel","price","timestamp"},new String[]{});
         //向搜索请求对象中设置搜索源
@@ -313,7 +312,7 @@ public class TestSearch {
 
         //搜索方式
         //MultiMatchQuery
-        searchSourceBuilder.query(QueryBuilders.multiMatchQuery("spring css","name","description")
+        searchSourceBuilder.query(QueryBuilders.multiMatchQuery("java 程序","name","description")
                 .minimumShouldMatch("50%")
                 .field("name",10));
         //设置源字段过虑,第一个参数结果集包括哪些字段，第二个参数表示结果集不包括哪些字段
@@ -432,7 +431,7 @@ public class TestSearch {
         boolQueryBuilder.must(multiMatchQueryBuilder);
         //定义过虑器
         boolQueryBuilder.filter(QueryBuilders.termQuery("studymodel","201001"));
-        boolQueryBuilder.filter(QueryBuilders.rangeQuery("price").gte(90).lte(100));
+        boolQueryBuilder.filter(QueryBuilders.rangeQuery("price").gte(40).lte(100));
 
         searchSourceBuilder.query(boolQueryBuilder);
         //设置源字段过虑,第一个参数结果集包括哪些字段，第二个参数表示结果集不包括哪些字段
@@ -608,3 +607,6 @@ public class TestSearch {
 
     }
 }
+
+
+

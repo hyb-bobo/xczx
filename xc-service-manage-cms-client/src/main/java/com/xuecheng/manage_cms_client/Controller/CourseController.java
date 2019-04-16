@@ -1,9 +1,14 @@
 package com.xuecheng.manage_cms_client.Controller;
 
 import com.xuecheng.api.course.CourseControllerApi;
+import com.xuecheng.framework.domain.course.CourseBase;
+import com.xuecheng.framework.domain.course.CourseMarket;
 import com.xuecheng.framework.domain.course.Teachplan;
+import com.xuecheng.framework.domain.course.ext.CourseView;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import com.xuecheng.framework.domain.course.request.CourseListRequest;
+import com.xuecheng.framework.domain.course.response.AddCourseResult;
+import com.xuecheng.framework.domain.course.response.CoursePublishResult;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import com.xuecheng.manage_cms_client.service.CourseService;
@@ -36,12 +41,52 @@ public class CourseController implements CourseControllerApi {
     }
 
     @Override
+    public CourseMarket getCourseMarketById(String courseId) {
+        return null;
+    }
+
+    @Override
     public ResponseResult addTeachplan(Teachplan teachplan) {
         return null;
     }
 
     @Override
+    public ResponseResult updateCoursebase(CourseBase Course) {
+        return null;
+    }
+
+    @Override
+    public ResponseResult updateCourseMarket(CourseMarket courseMarket) {
+        return null;
+    }
+
+    @Override
+    public AddCourseResult addCourse(CourseBase Course) {
+        return null;
+    }
+
+    @Override
     public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
+        return null;
+    }
+
+    @Override
+    public CourseBase getCoursebaseById(String courseid) {
+        return null;
+    }
+
+    @Override
+    public CourseView courseview(String id) {
+        return null;
+    }
+
+    @Override
+    public CoursePublishResult preview(String id) {
+        return null;
+    }
+
+    @Override
+    public CoursePublishResult publish(String id) {
         return null;
     }
 }

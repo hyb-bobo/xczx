@@ -9,11 +9,13 @@ import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.update.UpdateRequest;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.IndicesClient;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.rest.RestStatus;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,9 +48,9 @@ public class TestIndex {
         //创建索引对象
         CreateIndexRequest createIndexRequest = new CreateIndexRequest("xc_course");
         //设置参数
-        createIndexRequest.settings(Settings.builder().put("number_of_shards","1").put("number_of_replicas","0"));
-        //指定映射
-        createIndexRequest.mapping("doc"," {\n" +
+        createIndexRequest.settings(Settings.builder().put("number_of_shards", "1").put("number_of_replicas", "0"));
+        /*//指定映射
+        createIndexRequest.mapping("doc", " {\n" +
                 " \t\"properties\": {\n" +
                 "            \"studymodel\":{\n" +
                 "             \"type\":\"keyword\"\n" +
@@ -66,14 +68,14 @@ public class TestIndex {
                 "             \"index\":false\n" +
                 "           }\n" +
                 " \t}\n" +
-                "}", XContentType.JSON);
+                "}", XContentType.JSON);*/
         //操作索引的客户端
         IndicesClient indices = client.indices();
         //执行创建索引库
         CreateIndexResponse createIndexResponse = indices.create(createIndexRequest);
         //得到响应
         boolean acknowledged = createIndexResponse.isAcknowledged();
-        System.out.println(acknowledged);
+        System.out.println(acknowledged + "----------------------------------------------------");
 
     }
 
@@ -101,12 +103,12 @@ public class TestIndex {
         jsonMap.put("name", "spring cloud实战");
         jsonMap.put("description", "本课程主要从四个章节进行讲解： 1.微服务架构入门 2.spring cloud 基础入门 3.实战Spring Boot 4.注册中心eureka。");
         jsonMap.put("studymodel", "201001");
-        SimpleDateFormat dateFormat =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         jsonMap.put("timestamp", dateFormat.format(new Date()));
         jsonMap.put("price", 5.6f);
 
         //创建索引创建对象
-        IndexRequest indexRequest = new IndexRequest("xc_course","doc");
+        IndexRequest indexRequest = new IndexRequest("xc_course", "doc");
         //文档内容
         indexRequest.source(jsonMap);
         //通过client进行http的请求
@@ -120,10 +122,23 @@ public class TestIndex {
     @Test
     public void testGetDoc() throws IOException {
         //查询请求对象
-        GetRequest getRequest = new GetRequest("xc_course","doc","tzk2-mUBGsEnDOUe482B");
+        GetRequest getRequest = new GetRequest("xc_course", "doc", "lGro22kB7nKqUH0em74v");
         GetResponse getResponse = client.get(getRequest);
         //得到文档的内容
         Map<String, Object> sourceAsMap = getResponse.getSourceAsMap();
         System.out.println(sourceAsMap);
+    }
+
+
+    //更新文档
+    @Test
+    public void updateDoc() throws IOException {
+        UpdateRequest updateRequest = new UpdateRequest("xc_course", "doc", "2");
+        Map<String, String> map = new HashMap<>();
+        map.put("description", "java语言是世界第一编程语言框架，在软件开发领域使用人数最多。");
+        updateRequest.doc(map);
+        UpdateResponse update = client.update(updateRequest);
+        RestStatus status = update.status();
+        System.out.println(status);
     }
 }
