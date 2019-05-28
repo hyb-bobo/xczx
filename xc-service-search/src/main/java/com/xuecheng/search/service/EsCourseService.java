@@ -9,12 +9,17 @@ import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.common.text.Text;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.MultiMatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -37,13 +42,14 @@ public class EsCourseService {
     private String type;
     @Value("${xuecheng.course.source_field}")
     private String source_field;
+    private static final Logger LOGGER = LoggerFactory.getLogger(EsCourseService.class);
 
     @Autowired
     RestHighLevelClient restHighLevelClient;
 
     //课程搜索
     public QueryResponseResult list(int page, int size, CourseSearchParam courseSearchParam) {
-        if(courseSearchParam == null){
+        if (courseSearchParam == null) {
             courseSearchParam = new CourseSearchParam();
         }
         //创建搜索请求对象
@@ -54,32 +60,51 @@ public class EsCourseService {
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         //过虑源字段
         String[] source_field_array = source_field.split(",");
-        searchSourceBuilder.fetchSource(source_field_array,new String[]{});
+        searchSourceBuilder.fetchSource(source_field_array, new String[]{});
         //创建布尔查询对象
         BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
         //搜索条件
         //根据关键字搜索
-        if(StringUtils.isNotEmpty(courseSearchParam.getKeyword())){
+        if (StringUtils.isNotEmpty(courseSearchParam.getKeyword())) {
             MultiMatchQueryBuilder multiMatchQueryBuilder = QueryBuilders.multiMatchQuery(courseSearchParam.getKeyword(), "name", "description", "teachplan")
                     .minimumShouldMatch("70%")
                     .field("name", 10);
             boolQueryBuilder.must(multiMatchQueryBuilder);
         }
-        if(StringUtils.isNotEmpty(courseSearchParam.getMt())){
+        if (StringUtils.isNotEmpty(courseSearchParam.getMt())) {
             //根据一级分类
-            boolQueryBuilder.filter(QueryBuilders.termQuery("mt",courseSearchParam.getMt()));
+            boolQueryBuilder.filter(QueryBuilders.termQuery("mt", courseSearchParam.getMt()));
         }
-        if(StringUtils.isNotEmpty(courseSearchParam.getSt())){
+        if (StringUtils.isNotEmpty(courseSearchParam.getSt())) {
             //根据二级分类
-            boolQueryBuilder.filter(QueryBuilders.termQuery("st",courseSearchParam.getSt()));
+            boolQueryBuilder.filter(QueryBuilders.termQuery("st", courseSearchParam.getSt()));
         }
-        if(StringUtils.isNotEmpty(courseSearchParam.getGrade())){
+        if (StringUtils.isNotEmpty(courseSearchParam.getGrade())) {
             //根据难度等级
-            boolQueryBuilder.filter(QueryBuilders.termQuery("grade",courseSearchParam.getGrade()));
+            boolQueryBuilder.filter(QueryBuilders.termQuery("grade", courseSearchParam.getGrade()));
         }
+
+        //分页
+        if (page <= 0) {
+            page = 1;
+        }
+        if (size <= 0) {
+            size = 20;
+        }
+        int start = (page - 1) * size;
+        searchSourceBuilder.from(start);
+        searchSourceBuilder.size(size);
 
         //设置boolQueryBuilder到searchSourceBuilder
         searchSourceBuilder.query(boolQueryBuilder);
+
+        //高亮设置
+        HighlightBuilder highlightBuilder = new HighlightBuilder();
+        highlightBuilder.preTags("<font class='eslight'>");
+        highlightBuilder.postTags("</font>");
+        //设置高亮字段
+        highlightBuilder.fields().add(new HighlightBuilder.Field("name"));
+        searchSourceBuilder.highlighter(highlightBuilder);
         searchRequest.source(searchSourceBuilder);
 
         QueryResult<CoursePub> queryResult = new QueryResult();
@@ -93,12 +118,24 @@ public class EsCourseService {
             long totalHits = hits.totalHits;
             queryResult.setTotal(totalHits);
             SearchHit[] searchHits = hits.getHits();
-            for(SearchHit hit:searchHits){
+            for (SearchHit hit : searchHits) {
                 CoursePub coursePub = new CoursePub();
                 //源文档
                 Map<String, Object> sourceAsMap = hit.getSourceAsMap();
                 //取出name
                 String name = (String) sourceAsMap.get("name");
+                Map<String, HighlightField> highlightFields = hit.getHighlightFields();
+                if (highlightFields != null) {
+                    HighlightField nameField = highlightFields.get("name");
+                    if (nameField != null) {
+                        Text[] fragments = nameField.getFragments();
+                        StringBuffer stringBuffer = new StringBuffer();
+                        for (Text str : fragments) {
+                            stringBuffer.append(str.string());
+                        }
+                        name = stringBuffer.toString();
+                    }
+                }
                 coursePub.setName(name);
                 //图片
                 String pic = (String) sourceAsMap.get("pic");
@@ -106,7 +143,7 @@ public class EsCourseService {
                 //价格
                 Double price = null;
                 try {
-                    if(sourceAsMap.get("price")!=null ){
+                    if (sourceAsMap.get("price") != null) {
                         price = (Double) sourceAsMap.get("price");
                     }
 
@@ -117,7 +154,7 @@ public class EsCourseService {
                 //旧价格
                 Double price_old = null;
                 try {
-                    if(sourceAsMap.get("price_old")!=null ){
+                    if (sourceAsMap.get("price_old") != null) {
                         price_old = (Double) sourceAsMap.get("price_old");
                     }
                 } catch (Exception e) {
@@ -131,6 +168,8 @@ public class EsCourseService {
 
         } catch (IOException e) {
             e.printStackTrace();
+            LOGGER.error("xuecheng search error..{}", e.getMessage());
+            return new QueryResponseResult(CommonCode.SUCCESS, new QueryResult<CoursePub>());
         }
 
         queryResult.setList(list);

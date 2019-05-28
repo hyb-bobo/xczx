@@ -1,15 +1,17 @@
 package com.xuecheng.framework.domain.cms.request;
 
 import com.xuecheng.framework.model.request.RequestData;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
  * Created by bobo on 2018/10/10.
  */
 @Data
-public class QueryPageRequest  extends RequestData {
+public class QueryPageRequest extends RequestData {
 
     //站点id
+    @ApiModelProperty("站点id")
     private String siteId;
     //页面ID
     private String pageId;

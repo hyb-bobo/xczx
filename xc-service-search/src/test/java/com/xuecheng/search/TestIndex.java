@@ -15,6 +15,7 @@ import org.elasticsearch.client.IndicesClient;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.rest.RestStatus;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,26 +50,87 @@ public class TestIndex {
         CreateIndexRequest createIndexRequest = new CreateIndexRequest("xc_course");
         //设置参数
         createIndexRequest.settings(Settings.builder().put("number_of_shards", "1").put("number_of_replicas", "0"));
-        /*//指定映射
+        //指定映射
         createIndexRequest.mapping("doc", " {\n" +
-                " \t\"properties\": {\n" +
-                "            \"studymodel\":{\n" +
-                "             \"type\":\"keyword\"\n" +
-                "           },\n" +
-                "            \"name\":{\n" +
-                "             \"type\":\"keyword\"\n" +
-                "           },\n" +
-                "           \"description\": {\n" +
-                "              \"type\": \"text\",\n" +
-                "              \"analyzer\":\"ik_max_word\",\n" +
-                "              \"search_analyzer\":\"ik_smart\"\n" +
-                "           },\n" +
-                "           \"pic\":{\n" +
-                "             \"type\":\"text\",\n" +
-                "             \"index\":false\n" +
-                "           }\n" +
-                " \t}\n" +
-                "}", XContentType.JSON);*/
+                "         \"properties\" : {\n" +
+                "            \"charge\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"description\" : {\n" +
+                "               \"analyzer\" : \"ik_max_word\",\n" +
+                "               \"search_analyzer\" : \"ik_smart\",\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"end_time\" : {\n" +
+                "               \"format\" : \"yyyy-MM-dd HH:mm:ss\",\n" +
+                "               \"type\" : \"date\"\n" +
+                "            },\n" +
+                "            \"expires\" : {\n" +
+                "               \"format\" : \"yyyy-MM-dd HH:mm:ss\",\n" +
+                "               \"type\" : \"date\"\n" +
+                "            },\n" +
+                "            \"grade\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"id\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"mt\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"name\" : {\n" +
+                "               \"analyzer\" : \"ik_max_word\",\n" +
+                "               \"search_analyzer\" : \"ik_smart\",\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"pic\" : {\n" +
+                "               \"index\" : false,\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"price\" : {\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"price_old\" : {\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"pub_time\" : {\n" +
+                "               \"format\" : \"yyyy-MM-dd HH:mm:ss\",\n" +
+                "               \"type\" : \"date\"\n" +
+                "            },\n" +
+                "            \"qq\" : {\n" +
+                "               \"index\" : false,\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"st\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"start_time\" : {\n" +
+                "               \"format\" : \"yyyy-MM-dd HH:mm:ss\",\n" +
+                "               \"type\" : \"date\"\n" +
+                "            },\n" +
+                "            \"status\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"studymodel\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"teachmode\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            },\n" +
+                "            \"teachplan\" : {\n" +
+                "               \"analyzer\" : \"ik_max_word\",\n" +
+                "               \"search_analyzer\" : \"ik_smart\",\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"users\" : {\n" +
+                "               \"index\" : false,\n" +
+                "               \"type\" : \"text\"\n" +
+                "            },\n" +
+                "            \"valid\" : {\n" +
+                "               \"type\" : \"keyword\"\n" +
+                "            }\n" +
+                "         }\n" +
+                "      }", XContentType.JSON);
         //操作索引的客户端
         IndicesClient indices = client.indices();
         //执行创建索引库

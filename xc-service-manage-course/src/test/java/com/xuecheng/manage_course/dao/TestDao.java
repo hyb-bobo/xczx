@@ -45,7 +45,7 @@ public class TestDao {
     @Test
     public void testCourseMapper() {
         CourseBase courseBase = courseMapper.findCourseBaseById("402885816240d276016240f7e5000002");
-        System.out.println(courseBase);
+        System.out.println(courseBase+"-------------------");
 
     }
 

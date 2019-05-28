@@ -1,8 +1,8 @@
 package com.xuecheng.api.course;
 
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
 import com.xuecheng.framework.domain.course.ext.CategoryNode;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 
 /**
  * Created by bobo on 2019/1/3.

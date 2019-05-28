@@ -1,12 +1,12 @@
 package com.xuecheng.api.cms;
 
+import com.wordnik.swagger.annotations.ApiOperation;
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
 import com.xuecheng.framework.domain.cms.response.CmsPostPageResult;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.ResponseResult;
-import io.swagger.annotations.ApiOperation;
 
 /**
  * Created by bobo on 2018/10/10.

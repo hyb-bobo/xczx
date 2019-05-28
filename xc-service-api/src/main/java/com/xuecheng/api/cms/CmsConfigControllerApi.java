@@ -1,8 +1,8 @@
 package com.xuecheng.api.cms;
 
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
 import com.xuecheng.framework.domain.cms.CmsConfig;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 
 /**
  * Created by bobo on 2018/10/24.
